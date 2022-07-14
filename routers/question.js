@@ -1,9 +1,8 @@
 const express = require("express");
 // api/questions
-const router = express.Router()
-const { getAllQuestions } = require("../controllers/question")
+const router = express.Router();
+const { getAllQuestions } = require("../controllers/question");
 
-router.get("/", getAllQuestions)
-
+router.get("/", getAllQuestions);
 
 module.exports = router;
